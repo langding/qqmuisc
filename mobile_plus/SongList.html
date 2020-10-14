@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>SongList</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+    <link rel="icon" href="../img/ico.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/my_page.css">
+    <link rel="stylesheet" type="text/css" href="css/SongList.css">
+
+</head>
+<body>
+<div id="My_SongList">
+    <header  class="header">
+        <div class="header_bar">
+            <div class="header_left">
+                <a href="my.html">
+                    <span class="iconfont SP_back">&#xe60d;</span>
+                </a>
+            </div>
+            <div class="header_text">
+                <span class="SP_shuxian rebuild_btn">自建歌单</span>
+                <span class="Collection_btn">收藏歌单</span>
+            </div>
+        </div>
+    </header>
+    <div class="music_library">
+        <div class="library_header">
+            <h2>6张歌单</h2>
+            <div class="header_right">
+                <a><span class="iconfont">&#xe511;</span></a>
+                <a><span class="iconfont">&#xe8f5;</span></a>
+            </div>
+        </div>
+        <div class="library_1">
+            <div class="music_item music_like">
+                <div class="left_item_img iconfont P2">
+                    <img src="img/my_page/yueku3.jpg" alt="">
+                </div>
+                <div class="middle_item_message">
+                    <h3>评论</h3>
+                    <p class="among">1条 评论</p>
+                </div>
+                <div class="right_item_arrow">
+                    <span class="iconfont">&#xe61e;</span>
+                </div>
+            </div>
+        </div>
+        <div class="library_1">
+            <div class="music_item music_like">
+                <div class="left_item_img">
+                    <img src="img/my_page/gedan1.jpg" alt="">
+                </div>
+                <div class="middle_item_message">
+                    <h3>搓澡</h3>
+                    <p class="among">22首336次播放</p>
+                </div>
+                <div class="right_item_arrow">
+                    <span class="iconfont">&#xe61e;</span>
+                </div>
+            </div>
+        </div>
+        <div class="library_1">
+            <div class="music_item music_like">
+                <div class="left_item_img">
+                    <img src="img/my_page/gedan2.jpg" alt="">
+                </div>
+                <div class="middle_item_message">
+                    <h3>so-lin</h3>
+                    <p class="among">66首 1341次播放</p>
+                </div>
+                <div class="right_item_arrow">
+                    <span class="iconfont">&#xe61e;</span>
+                </div>
+            </div>
+        </div>
+        <div class="library_1">
+            <div class="music_item music_like">
+                <div class="left_item_img">
+                    <img src="img/my_page/gedan3.jpg" alt="">
+                </div>
+                <div class="middle_item_message">
+                    <h3>杰伦</h3>
+                    <p class="among">42首 582次播放</p>
+                </div>
+                <div class="right_item_arrow">
+                    <span class="iconfont">&#xe61e;</span>
+                </div>
+            </div>
+        </div>
+        <div class="library_1">
+            <div class="music_item music_like">
+                <div class="left_item_img">
+                    <img src="img/my_page/gedan4.jpg" alt="">
+                </div>
+                <div class="middle_item_message">
+                    <h3>回忆</h3>
+                    <p class="among">3首 播放3次</p>
+                </div>
+                <div class="right_item_arrow">
+                    <span class="iconfont">&#xe61e;</span>
+                </div>
+            </div>
+        </div>
+        <div class="library_1">
+            <div class="music_item music_like">
+                <div class="left_item_img">
+                    <img src="img/my_page/gedan5.jpg" alt="">
+                </div>
+                <div class="middle_item_message">
+                    <h3>国歌</h3>
+                    <p class="among">3首 8次播放</p>
+                </div>
+                <div class="right_item_arrow">
+                    <span class="iconfont">&#xe61e;</span>
+                </div>
+            </div>
+        </div>
+        <div class="library_1">
+            <div class="music_item music_like">
+                <div class="left_item_img">
+                    <span class="iconfont SP_daoru">&#xe632;</span>
+                </div>
+                <div class="middle_item_message">
+                    <h3>导入</h3>
+                    <p class="among">导入你喜欢的歌曲</p>
+                </div>
+                <div class="right_item_arrow">
+                    <span class="iconfont">&#xe61e;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Collection_Songlist">
+            <span class="iconfont">&#xe683;</span>
+            <span class="coll">没有收藏的歌单</span>
+            <a class="musicLibrary"><span>去音乐馆逛逛</span></a>
+    </div>
+</div>
+<script src="js/fontsize.js">
+</script>
+<script type="text/javascript">
+     let gedan1 = document.getElementsByClassName("rebuild_btn")[0];
+     let gedan2 = document.getElementsByClassName("Collection_btn")[0];
+
+     let page1 =document.getElementsByClassName("music_library")[0];
+     let page2 =document.getElementsByClassName("Collection_Songlist")[0];
+
+    function show1(){
+        gedan2.style.color = "#7b7878";
+        gedan1.style.color = "black";
+        page1.style.display = "block";
+        page2.style.display = "none";
+    }
+    function show2(){
+        gedan1.style.color = "#7b7878";
+        gedan2.style.color = "black";
+        page2.style.display = "flex";
+        page1.style.display = "none";
+    }
+    gedan1.addEventListener("click",show1,false);
+    gedan2.addEventListener("click",show2,false);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    border:0;
+}
+ol, ul ,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+html {
+    font-size: 100px;
+}
+body {
+    background-color:rgb(250,250,250);
+    font-family: -apple-system, sans-serif;
+    font-size: .2rem;
+    font-weight: 300;
+    font-stretch: normal;
+    line-height: 1.5;
+}
+header.header {
+    z-index:100;
+    right: 0;
+    left: 0;
+    height: 0.8rem;
+    top: 0;
+    position: fixed;
+    padding: 0 0.2rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    background: rgb(250,250,250);
+}
+
+.header_left h2 {
+    font-size: 0.28rem;
+    position: relative;
+    font-weight: 400;
+}
+.header_left h2::after {
+    content: "";
+    border-radius: 0.1rem;
+    left: -1%;
+    bottom: -26%;
+    background-color: rgb(34,213,157);
+    width: 0.55rem;
+    position: absolute;
+    height: 0.05rem;
+}
+.header_right span {
+    position: relative;
+    padding: 0 0.1rem;
+    font-size: 0.26rem;
+    color: #737373;
+}
+.header_right > a {
+    display: contents;
+}
+.red_dot::after {
+    content: "";
+    width: 0.08rem;
+    position: absolute;
+    height: 0.08rem;
+    border-radius: 50%;
+    background-color: #f40;
+    top: 15%;
+    right: 18%;
+}
+.header_right {
+    display: flex;
+}
+.search_frame {
+    border-radius: 0.3rem;
+    padding: 0.1rem;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    margin: .9rem auto 0;
+    font-size: 0.15rem;
+    background-color: #fff;
+}
+.search_frame > a{
+    color: #989898;
+}
+.coco {
+    padding:0 0.1rem;
+    font-size: 0.18rem;
+}
+.person_message {
+    border-radius:0.1rem;
+    width: 90%;
+    margin: 0.4rem auto 0;
+    background-color: #fff;
+    flex-direction: column;
+    font-size: 0.2rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.3rem;
+}
+.person_Name {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items:center;
+    margin-bottom: 0.3rem;
+    height: 0.5rem;
+}
+.person_Name a:not(.portrait) {
+    padding:0 0.1rem;
+    display: flex;
+    align-items: center;
+}
+.portrait {
+    position: relative;
+    height: 0.8rem;
+    background-image: url("../img/my_page/Cache_-5110fd6ae75483c4..jpg");
+    width: 0.8rem;
+    background-size: contain;
+    border-radius: 50%;
+}
+span.penguin {
+    position: absolute;
+    bottom: 0;
+    right: 9%;
+    font-size: 0.16rem;
+    color: #42a3e8;
+}
+.username {
+    padding-right: 0.05rem;
+    font-weight: 500;
+    font-size: 0.2rem;
+    display: inline;
+}
+span.person_level {
+    width: 0.4rem;
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    background-color: #fb96008c;
+    font-size: 0.12rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 0.1rem;
+    padding-left: 0.05rem;
+    height: 0.18rem;
+}
+span.iconfont.record {
+     z-index: 10;
+    position: absolute;
+    top: -15%;
+    left: -20%;
+    font-size: 0.21rem;
+    color: #ff7905;
+}
+span.iconfont.vip {
+    font-size: 0.24rem;
+    vertical-align: sub;
+}
+.person_concerns {
+    color: #d4d2d2;
+    font-size: 0.16rem;
+}
+.Concerns, .fans, .new_remind {
+    color: black;
+    font-weight: 300;
+    position: relative;
+}
+.Concerns::after ,.fans::after {
+    position: absolute;
+    content: "|";
+    color: #e2e2e2;
+    right: -50%;
+}
+.person_concerns {
+    display: flex;
+    color: #d4d2d2;
+    font-size: 0.16rem;
+    justify-content: space-around;
+    width: 100%;
+}
+.new_remind > span {
+    padding-left:0.1rem;
+    color: #b8b3b3;
+}
+.middle_area {
+    border-radius:0.1rem;
+    padding: 0.2rem 0;
+    display: flex;
+    font-size: 0.16rem;
+    width: 90%;
+    margin: 0.23rem auto 0;
+    background-color: #fff;
+    justify-content: space-around;
+}
+.activity_center,.vip_center {
+    display: flex;
+    align-items: center;
+    flex-grow:1;
+    justify-content: space-evenly;
+}
+.red_box{
+    position: relative;
+}
+.middle_area > div > a > span {
+    font-size: 0.3rem !important;
+    color: #dadada;
+}
+.middle_area p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 0.65rem;
+    font-size: 0.12rem;
+    overflow: hidden;
+}
+p.Center1 {
+    font-size: 0.15rem;
+}
+.dot_sp::after {
+    top: 9%;
+    right: -15%;
+}
+.green_btn span {
+    font-size: 0.14rem;
+}
+.green_btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0.16rem auto;
+}
+.like_btn, .local_btn, .songlist_btn, .purchase_btn {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.green_btn > div >a {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+span.iconfont.btn_function {
+    color: rgb(34,213,157);
+    font-size: 0.25rem;
+    margin-bottom: 0.06rem;
+}
+span.song_number {
+    font-size: 0.14rem;
+    color: #9c9c9c;
+    padding-top: 0.06rem;
+}
+span.sp_ic_bendi {
+    font-size: 0.39rem !important;
+    margin-bottom: -0.05rem !important;
+    position: relative;
+    top: -.05rem;
+}
+.local_btn .bendi {
+    position: relative;
+    top: -.04rem;
+}
+span.iconfont.btn_function.sp_ic {
+    border-radius: 0.07rem;
+    color: #fff;
+    background-color: rgb(34,213,157);
+    width: .3rem;
+    height: .3rem;
+    margin-bottom: .15rem;
+    position: relative;
+    top: .04rem;
+}
+span.iconfont.btn_function.sp_ic_buy {
+    border-radius:50%;
+}
+
+.main {
+    display:block;
+    position: relative;
+}
+.main-text {
+    font-size: 0.25rem;
+    margin-bottom: 0.1rem;
+    font-weight: 500;
+}
+.songlist-1_header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+}
+.new_build {
+    width: 27%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.new_build > span:first-child {
+    font-size:0.16rem;
+}
+.new_build > a.iconfont {
+    font-size: 0.15rem;
+    border-radius: 0.05rem;
+    color: #fff;
+    line-height: 0.18rem;
+    text-align: center;
+    height: 0.18rem;
+    width: 0.18rem;
+    display: inline-block;
+    background-color: rgb(34,213,157);
+}
+span.iconfont.More {
+    font-size:0.14rem;
+}
+.song {
+    margin: 0 .1rem .4rem 0.1rem;
+    white-space: nowrap;
+    display: inline-flex;
+}
+.item-box {
+    width: 1.6rem;
+    margin: 0 0.05rem;
+}
+.song-pic {
+    position: relative;
+    height: 1.6rem;
+}
+.song-pic.SP_yifu:before {
+    background-color: rgb(179,143,179);
+}
+.song-pic:before {
+    content: "\e622";
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    bottom: -6%;
+    border-radius: 0.2rem;
+    text-align: center;
+    left: 2%;
+    height: 17%;
+    width: 30%;
+    background-color: rgb(147,157,178);
+    line-height: 0.25rem;
+    font-size: 0.16rem;
+}
+.song-pic.SP_yifu:after {
+    content: "\e60a";
+    top: 0;
+    width: 100%;
+    left: 0;
+    color: #fff;
+    border-radius: 8%;
+    line-height: 0.8rem;
+    text-indent: 0.2rem;
+    position: absolute;
+    font-size: 0.35rem;
+    background-color: rgb(25 21 21 / 66%);
+    height: 100%;
+}
+.songlist-3 .item-box {
+    width: 4.5rem;
+}
+.songlist-3 .song-pic {
+    height: 2.5rem;
+}
+.song-pic img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: .12rem;
+}
+.song-pic .count {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: .1rem;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    border-radius: .12rem;
+}
+.item-box .text {
+    font-size: .18rem;
+    margin-top: .2rem;
+    white-space: normal;
+}
+.songlist-box {
+    width: 96%;
+    overflow-x: scroll;
+    margin: 0 auto;
+}
+li.song-item {
+    display: inline-flex;
+}
+.songlist-3 .song-pic .count {
+    position: absolute;
+    left: .12rem;
+    bottom: .12rem;
+    font-size: .4rem;
+    color: #fff;
+    background: none;
+    padding: 0 .12rem;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.find_more {
+    width: 90%;
+    font-size: 0.18rem;
+    height: 1rem;
+    text-align: center;
+    margin: 0 auto 1rem;
+    color: #a1a1a1;
+}

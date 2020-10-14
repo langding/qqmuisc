@@ -1,0 +1,281 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    border:0;
+}
+ol, ul ,li {
+    list-style: none;
+}
+a {
+    text-decoration:none;
+}
+div.header_bar {
+    z-index:100;
+    right: 0;
+    left: 0;
+    height: 0.8rem;
+    top: 0;
+    position: fixed;
+    padding: 0 0.2rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+}
+span.iconfont.SP_back {
+    font-size: 0.28rem;
+    color: #a1a1a1;
+}
+.header_left > a{
+    display:flex;
+}
+.header_right span{
+    position: relative;
+    padding: 0 0.1rem;
+    font-size: 0.26rem;
+    color: #737373;
+}
+.header_right > a{
+    display: contents;
+}
+.header_right {
+    display: flex;
+}
+.my_name {
+    position: fixed;
+    display: flex;
+    height: 0.8rem;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    opacity: 0;
+    background-color: #32393f;
+    justify-content: center;
+    color: #fff;
+    z-index: 10;
+}
+.my_name > span{
+    font-size: 0.22rem;
+}
+.person_message {
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    display: flex;
+    height: 1.3rem;
+    align-items: center;
+    padding-top: 4rem;
+    background-size: cover;
+    background-image: url("../img/my_page/jielun.jpg");
+}
+.person_Name {
+    width: 90%;
+    justify-content: end;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+.person_Name a:not(.portrait){
+    padding:0 0.1rem;
+    display: flex;
+    align-items: center;
+}
+.portrait{
+    position: absolute;
+    height: 1rem;
+    background-image: url("../img/my_page/Cache_-5110fd6ae75483c4..jpg");
+    width: 1rem;
+    background-size: contain;
+    border-radius: 50%;
+    left: 5%;
+    bottom: 170%;
+}
+span.penguin{
+    position: absolute;
+    bottom: 0px;
+    right: 9%;
+    font-size: 0.16rem;
+    color: #42a3e8;
+}
+.username{
+    padding-right: 0.05rem;
+    font-weight: 500;
+    font-size: 0.2rem;
+    display: inline;
+    color:#fff;
+}
+span.person_level {
+    width: 0.4rem;
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    background-color: #fb9600;
+    font-size: 0.12rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 0.1rem;
+    padding-left: 0.05rem;
+    height: 0.18rem;
+}
+span.iconfont.record {
+     z-index: 10;
+    position: absolute;
+    top: -18%;
+    left: -20%;
+    font-size: 0.22rem;
+    color: #ff0000;
+}
+span.iconfont.ear {
+    font-size: 0.35rem;
+    font-weight:400;
+    height: 0.3rem;
+    color: rgb(34,213,157);
+    line-height: 0.26rem;
+}
+.person_concerns {
+    color: #d4d2d2;
+    font-size: 0.16rem;
+}
+.Concerns, .fans, .new_remind,.visitors{
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+}
+
+.person_concerns {
+    display: flex;
+    color: #d4d2d2;
+    font-size: 0.16rem;
+    justify-content: space-around;
+    width: 100%;
+}
+.new_remind > span{
+    padding-left:0.1rem;
+    color: #b8b3b3;
+}
+h2{
+    width: 100%;
+    font-size:0.26rem;
+    padding: 0.05rem 0;
+    font-weight: 500;
+}
+.basic_message {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    padding: 0.3rem 0 0.1rem 0;
+    margin: 0 auto;
+}
+.music_favor {
+    padding: 0.05rem 0;
+    text-overflow: ellipsis;
+    font-size: 0.18rem;
+    color: #777777;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.favor_left span{
+    padding-right: 0.08rem;
+}
+.favor_left span:first-child{
+    padding-left:0;
+}
+@media screen and (max-width:370px){
+    .favor_right{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index:100;
+    }
+}
+span.iconfont.medal {
+    font-size: 0.18rem;
+    color: #777777;
+    padding: 0.05rem 0;
+}
+.music_library > h2{
+        width: 96%;
+    margin: 0 auto;
+}
+.library_1 {
+    width: 96%;
+    margin: 0.1rem auto;
+}
+.music_item.music_like {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.left_item_img{
+    display:flex;
+    position: relative;
+}
+div.P1:after{
+    content:'\e62b';
+    position: absolute;
+    color: red;
+    top: 37%;
+    font-size: 0.3rem;
+    left: 31%;
+}
+div.P2:after{
+    content:'\e7ae';
+    position: absolute;
+    color: #fff;
+    top: 33%;
+    font-size: 0.32rem;
+    left: 32%;
+}
+div.P3:after{
+    content:'\e683';
+    position: absolute;
+    color: #fff;
+    top: 37%;
+    font-size: 0.32rem;
+    left: 31%;
+}
+.right_item_arrow {
+    display: flex;
+}
+.right_item_arrow >span{
+    font-size: 0.16rem;
+    color: #777777;
+}
+.middle_item_message {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 0 0 0 0.1rem;
+}
+.left_item_img > img{
+    width: 1rem;
+    border-radius: 0.1rem;
+    box-shadow: 3px 0 5px #a1a1a1a6;
+}
+h3 {
+    font-size: 0.22rem;
+    text-indent: 0.08rem;
+    padding-bottom: 0.1rem;
+    font-weight: 500;
+}
+p.among{
+    color: #7c7a7a;
+    font-weight: 300;
+    font-size: 0.2rem;
+    text-indent: 0.08rem;
+}
+.music_library:last-child {
+    margin: .5rem 0 1rem;
+}

@@ -1,0 +1,327 @@
+html {
+    font-size: 100px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: .4rem;
+    line-height: 1.5;
+    font-family: -apple-system, sans-serif;
+    background-color: #fafafa;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/* 头部 */
+.header {
+    height: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 3px 25px rgba(0,0,0,.05);
+    background: #fff;
+}
+.header-top {
+    position: relative;
+    height: 1.2rem;
+}
+.top-box {
+    position: relative;
+    height: 100%;
+    padding: 0 .4rem 0 .4rem;
+    display: flex;
+    align-items: center;
+}
+.top-logo {
+    display: flex;
+    margin-right: .2rem;
+    width: .72rem;
+    height: .72rem;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: .72rem;
+    height: .72rem;
+}
+.top-text h3 {
+    font-size: .36rem;
+    font-weight: 500;
+}
+.top-text p {
+    font-size: .28rem;
+    color: gray;
+}
+.down-btn {
+    height: .5rem;
+    line-height: .48rem;
+    padding: 0 .3rem;
+    text-align: center;
+    font-size: .3rem;
+    color: #575656;
+    border: solid 1px #d8d8d8;
+    border-radius: 999px;
+    box-sizing: border-box;
+    right: .4rem;
+    position: absolute;
+}
+.header-bottom {
+    height: .8rem;
+    position: relative;
+    display: flex;
+}
+.header-bottom a {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: .35rem;
+}
+.current {
+    color: #31c27c;
+    border-bottom: .02rem solid #31c27c;
+}
+/* 搜索框 */
+.search {
+    display: flex;
+    top: 2.1rem;
+    position: relative;
+    font-size: .28rem;
+    margin-top: .2rem;
+}
+.search .icon-search {
+    font-size: .25rem;
+    margin: 0 .12rem;
+}
+.search-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .4rem;
+    height: .6rem;
+    border-radius: .3rem;
+    background: #fff;
+    color: gray;
+}
+/* 主页面 */
+.main {
+    display:block;
+    position: relative;
+    top: 2.6rem;
+}
+.main-text {
+    font-size: .4rem;
+    margin: 0 0 .3rem .4rem;
+}
+.song {
+    margin: 0 .25rem .5rem .25rem;
+    white-space: nowrap;
+    display: inline-flex;
+}
+.icon-play {
+    display: inline-block;
+    width: .12rem;
+    height: .12rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/song/play.png");
+}
+.item-box {
+    width: 2.1rem;
+    margin: 0 .1rem;
+}
+.song-pic {
+    position: relative;
+    height: 2.1rem;
+}
+.songlist-3 .item-box {
+    width: 4.5rem;
+}
+.songlist-3 .song-pic {
+    height: 2.5rem;
+}
+.song-pic img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: .12rem;
+}
+.song-pic .count {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: .15rem;
+    color: #fff;
+    padding: 0 .12rem;
+    background: rgba(0,0,0,.4);
+    border-radius: .12rem;
+}
+.item-box .text {
+    font-size: .25rem;
+    margin-top: .12rem;
+    white-space: normal;
+}
+.songlist-box {
+    overflow-x: scroll;
+}
+li.song-item {
+    display: inline-flex;
+}
+.songlist-3 .song-pic .count {
+    position: absolute;
+    left: .12rem;
+    bottom: .12rem;
+    font-size: .4rem;
+    color: #fff;
+    background: none;
+    padding: 0 .12rem;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/* 页脚 */
+.footer {
+    margin: .5rem 0 2rem 0;
+}
+.footer-pic {
+    display: flex;
+    margin: .3rem 0;
+    justify-content: center;
+    align-items: center;
+}
+.footer-pic img {
+    width: 1.5rem;
+}
+.footer p {
+    font-size: .25rem;
+    display: flex;
+    justify-content: center;
+}
+.footer-bottom {
+    position: fixed;
+    bottom: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.bottom-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .33rem;
+    background: #fff;
+    border-radius: .5rem;
+    height: .9rem;
+}
+.bottom-box .logo {
+    width: .5rem;
+    height: .5rem;
+    display: flex;
+    margin-right: .15rem;
+}
+.bottom-box .text {
+    font-size: .3rem;
+}
+
+/* 排行榜 */
+.clearfix:before, .container:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+
+.clearfix { zoom: 1; }
+.Top_main{
+    margin-top:1.55rem;
+    font-size:0.24rem;
+    display: none;
+}
+.rank_list_img {
+    width: 2.05rem;
+    height:100%;
+    position: relative;
+}
+.special_text2 {
+    color: rgba(26,26,26,1);
+}
+.special_text {
+    color: rgba(26,26,26,.5);
+}
+.rank_list_img > img {
+    width: 2.1rem;
+    height:100%;
+    border-radius: 0 .2rem .2rem 0;
+    position: relative;
+    right: .12rem;
+}
+ul.rank_list {
+    display: flex;
+}
+li.rank_list_item {
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    margin: 0 .16rem .22rem;
+    border-radius: .08rem 0 0 .08rem;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.rank_song_list > li {
+   overflow: hidden;
+    margin: 0 .12rem .04rem;
+    white-space: nowrap;
+    width: 4.7rem;
+    box-sizing: content-box;
+}
+.rank_list_text {
+    flex-grow: 1;
+    box-sizing: content-box;
+    padding-left: 0.1rem;
+    transform: scaleX(0.96);
+}
+div.rank_list_text > h2 {
+    font-size: 0.33rem;
+    text-indent: .12rem;
+}
+span.update_daily {
+    position: absolute;
+    top: .12rem;
+    font-size: 0.2rem;
+    color: #fff;
+    z-index: 10;
+    right: .2rem;
+}
+.play_count {
+    border-radius: .2rem;
+    padding: 0 .04rem;
+    text-align: center;
+    height: .24rem;
+    position: absolute;
+    right: .12rem;
+    bottom: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .15rem;
+}
+.play_count .iconfont {
+    font-size: .19rem;
+}
+
+
+
+
+
